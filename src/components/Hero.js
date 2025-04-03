@@ -1,9 +1,9 @@
 import React from 'react'
-
+import MovieDetails from './MovieDetails'
 function Hero() {
   return (
     <div>
-      <h1>Hero</h1>
+     <MovieDetails />
     </div>
   )
 }

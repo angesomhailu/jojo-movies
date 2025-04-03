@@ -31,9 +31,7 @@ const Navbar = () => {
           <BiSearch className="sm hidden h-6 w-6 sm:inline cursor-pointer" />
           <div className="relative group">
             <IoMdLogOut className="h-6 w-6 cursor-pointer" onClick={() => signOut()} />
-            <span className="absolute -left-4 -bottom-6 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
-              Sign Out
-            </span>
+            
           </div>
         </div>
       </div>

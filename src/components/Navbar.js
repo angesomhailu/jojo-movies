@@ -2,9 +2,8 @@ import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
 import Image from "next/image";
-
+import { IoMdLogOut } from "react-icons/io";
 import { BiSearch } from "react-icons/bi";
-import { BsBellFill } from "react-icons/bs";
 import { signOut } from "next-auth/react";
 
 const Navbar = () => {
@@ -29,18 +28,9 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-4 text-sm font-light">
-          <BiSearch className="sm hidden h-6 w-6 sm:inline" />
-          <p className="hidden lg:inline">Kids</p>
-          <BsBellFill className="h-6 w-6" />
-
-          <Image
-            src="/dp.png"
-            alt="dp"
-            width={60}
-            height={60}
-            className="cursor-pointer rounded w-auto h-auto"
-            onClick={() => signOut()}
-          />
+          <BiSearch className="sm hidden h-6 w-6 sm:inline cursor-pointer" />
+          <IoMdLogOut className="h-6 w-6 cursor-pointer " onClick={() => signOut()} />
+         
         </div>
       </div>
     </nav>
